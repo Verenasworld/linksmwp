@@ -1,3 +1,6 @@
+body{
+  background-color: #073531;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -5,14 +8,22 @@
   align-content: center;
   align-items: center;
   alignment: center;
+  background-color: #0acfbb;
+  width: 500px;
+  height: 900px;
+}
+
+.dark-mode-screen{
+  mix-blend-mode:darken;
 }
 
 .item{
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .logo{
   background-image: url("./assets/Mwplogo.png");
@@ -24,4 +35,22 @@
 }
 h3{
   text-align: center;
+}
+
+Button:hover{transform: scale(1.1);}
+
+
+.logo{
+  isolation: isolate;
+}
+
+.darkmode--activated h3  {
+  color: #ffffff;
+}
+.button {
+  isolation: isolate;
+}
+
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
 }
